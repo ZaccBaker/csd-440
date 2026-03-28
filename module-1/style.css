@@ -1,0 +1,39 @@
+:root{
+    --bg-main: #0B0C10;
+    --bg-secondary: #1F2833;
+    
+    --text-primary: #C5C6C7;
+    
+    --accent-primary: #66FCF1;
+    --accent-secondary: #45A29E;
+}
+
+body{
+    background: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.6rem;
+}
+
+h1{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+blockquote{
+    background: var(--bg-secondary);
+
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 0;
+
+    text-align: center;
+
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px var(--accent-primary);
+}
