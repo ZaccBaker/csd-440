@@ -1,0 +1,42 @@
+<?php 
+class MyInteger{
+    
+    public int $number;
+
+
+    public function __construct(int $number){
+        $this -> number = $number;
+    }
+
+    public function setNumber(int $number){
+        $this -> number = $number;
+    }
+
+    public function getNumber(){
+        return $this -> number;
+    }
+
+
+    function isEven(){
+        return ($this -> number % 2 === 0);
+    }
+
+    function isOdd(){
+        return ($this -> number % 2 !== 0);
+    }
+
+    function isPrime(){
+        if ($this -> number == 1) {
+            return 0;
+        }
+
+        for ($i = 2; $i <= sqrt($this -> number) ; $i++) { 
+            if ($this -> number % $i == 0) {
+                return 0;
+            }
+        }
+        return 1;
+    }
+}
+
+?>
